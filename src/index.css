@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.app {
+    background-image: url('./assets/cold-bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+  }
+  
+  .app.warm {
+    background-image: url('./assets/warm-bg.jpg');
+  }
+  
+  main {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  }
+  .search{
+border-radius: 0px 0px 12px 12px;
+  }
+  .temp{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+  }
+  .hero{
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  }
+  .date{
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+    color: #FFF;
+  }
+  .location{
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    color: #FFF;
+  }
+  .weather{
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  }
